@@ -180,12 +180,14 @@ import ConformiteLoiReen from "../layouts/solution/ConformiteLoiReen.astro";
     <title>Astro</title>
   </head>
   <MainLayout>
-    <Breadcrumb
+    <div class="px-12 lg:px-20 max-md:max-w-full flex w-full flex-col justify-center  mx-auto">
+      <Breadcrumb
       mainPage="accueil"
       subPage="solution"
       mainLink="/"
       subLink="/solution"
     />
+    </div>
     <section
       class="main-component flex flex-col text-white bg-slate-800"
       aria-label="Phygital Solution Section">
