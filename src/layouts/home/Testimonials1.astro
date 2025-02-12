@@ -1,0 +1,100 @@
+
+---
+import imgimages_gii_strategy_1_webp from "../../../public/images/gii_strategy_1.webp";
+import imgimages_gii_strategy_2_webp from "../../../public/images/gii_strategy_2.webp";
+import imgimages_gii_strategy_3_webp from "../../../public/images/gii_strategy_3.webp";
+import imgimages_gii_quote_icon_webp from "../../../public/images/gii_quote_icon.webp";
+import imgimages_gii_testimonial_avatar_webp from "../../../public/images/gii_testimonial_avatar.webp";
+import { Image } from "astro:assets";
+---
+
+<section
+class="main-component bg-slate-700 w-full"
+aria-labelledby="statsDarkTitle">
+<section
+  class="main-component w-full bg-slate-800 relative"
+  aria-labelledby="testimonialsDarkSectionHeading">
+  <div class="px-4 sm:px-6 lg:px-14 max-md:px-5 max-md:max-w-full pt-16">
+    <div class="flex max-w-screen-2xl mx-auto flex-col relative">
+      <div class="absolute -top-5 left-5 z-10">
+        <Image
+          alt="Quote icon"
+          src={imgimages_gii_quote_icon_webp}
+          width="50"
+          height="50"
+          class="w-[50] min-w-[50]"
+          aria-labelledby="quoteIcon"
+        />
+      </div>
+      <div class="absolute -bottom-[18px] right-[18px] rotate-180 z-10">
+        <Image
+          alt="Quote icon"
+          src={imgimages_gii_quote_icon_webp}
+          width="50"
+          height="50"
+          class="w-[50] min-w-[50]"
+          aria-labelledby="quoteIcon"
+        />
+      </div>
+      <div
+        class="max-md:max-w-full flex w-full flex-col items-center rounded-2xl bg-slate-700 py-10 px-6 relative gap-10">
+        <h1
+          width="auto"
+          height="auto"
+          class="max-md:max-w-full max-w-full flex-1 shrink gap-2.5 items-center text-center text-3xl font-semibold leading-10 text-white"
+          aria-labelledby="testimonialTitle">
+          Mesurer est essentiel, cela permet de suivre les évolutions. Il
+          existe de nombreux autres outils pour cela. Il est surtout
+          important de respecter les standards de mesure.
+        </h1>
+        <div
+          class="flex max-w-full flex-wrap xl:flex-nowrap items-start gap-6">
+          <div
+            class=" flex flex-col items-start justify-center text-xl leading-10 text-white lg:mr-44 gap-10">
+            <p width="auto" height="auto">
+              Cependant, pour s&#x27;améliorer, il faut surtout agir et
+              appliquer un plan d&#x27;actions opérationnel concret qui
+              touche tous les aspects du numérique au sein de
+              l&#x27;entreprise et, surtout, mobilise l&#x27;ensemble des
+              collaborateurs et parties prenantes. En engageant tout votre
+              écosystème, vous obtiendrez les résultats les plus tangibles
+              en matière d&#x27;impact.
+            </p>
+            <p width="auto" height="auto"> C&#x27;est grâce à des choix faits
+              par des humains formés et impliqués que le numérique pourra
+              devenir responsable.
+            </p>
+            <p
+              width="auto"
+              height="auto"
+              class="max-md:max-w-full mt-0 font-semibold"
+              cssResizer="mt-3 !flex-shrink">
+              Simon Cardon - Expert en Numérique Responsable, Fondateur de
+              Green WEB
+            </p>
+          </div>
+          <div class="flex-shrink-0 w-full lg:w-auto">
+            <Image
+              alt="Simon Cardon"
+              src={imgimages_gii_testimonial_avatar_webp}
+              width="309"
+              height="240"
+              class="flex w-full lg:w-[309px] min-w-[240px] shrink grow flex-col rounded-3xl"
+              aria-labelledby="testimonialImage"
+            />
+          </div>
+        </div>
+        <div class="text-center w-full flex justify-center max-md:mt-10 mt-12">
+          <button
+            width="auto"
+            height="auto"
+            class="max-md:mt-0 mt-0 min-h-[50px] flex-col items-center justify-center text-[14px] md:text-base lg:text-xl font-semibold leading-snug text-lime-500 max-md:px-5 inline-flex max-w-full gap-2.5 overflow-hidden rounded-md border border-solid border-lime-500 bg-lime-500 bg-opacity-0 hover:bg-opacity-100 transition-all hover:text-white px-12 py-2.5 w-[100%] lg:w-[410px]"
+            aria-labelledby="testimonialButton"
+            >La solution</button
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
