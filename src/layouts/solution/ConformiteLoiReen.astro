@@ -38,7 +38,8 @@ import imgimages_gii_clr_img_2_webp from "../../../public/images/gii_clr_img_2.w
             class="flex flex-col items-center p-4 leading-snug rounded-2xl bg-slate-700 min-h-[295px] lg:min-h-[310px] w-[calc(50%_-_9px)] md:w-[302px]"
             aria-labelledby="conformiteLoiReenProfessionalLabel">
             <Image alt="Professionnels du secteur" src={imgimages_gii_clr_img_1_webp} width="400" height="300"
-              class="max-w-full aspect-square w-[200px] mx-auto" cssResizer="mx-auto" loading="lazy" />
+              class="max-w-full aspect-square w-[200px] mx-auto"  loading="lazy" />
+
             <p width="auto" height="auto" class="mt-0">
               Professionnels du secteur
             </p>
@@ -47,7 +48,8 @@ import imgimages_gii_clr_img_2_webp from "../../../public/images/gii_clr_img_2.w
             class="flex flex-col items-center p-4 leading-snug rounded-2xl bg-slate-700 min-h-[295px] lg:min-h-[310px] w-[calc(50%_-_9px)] md:w-[302px]"
             aria-labelledby="conformiteLoiReenPublicLabel">
             <Image alt="Acteurs publics et consommateurs" src={imgimages_gii_clr_img_2_webp} width="400" height="300"
-              class="max-w-full aspect-square w-[200px] mx-auto" cssResizer="mx-auto" loading="lazy" />
+              class="max-w-full aspect-square w-[200px] mx-auto"  loading="lazy" />
+
             <p width="auto" height="auto" class="mt-0">
               Acteurs publics et consommateurs
             </p>
@@ -97,14 +99,18 @@ import imgimages_gii_clr_img_2_webp from "../../../public/images/gii_clr_img_2.w
         </div>
         <div width="auto" height="auto"
           class="text-lg lg:text-xl mt-0 flex-1 shrink gap-2.5 self-stretch w-full text-center"
-          cssResizer="mt-[2.5rem]">
+        >
+
           Notre équipe vous accompagne vers l’obtention du label officiel
           Numérique Responsable.
         </div>
         <div class="text-center pb-16 max-md:mt-6 mt-8" aria-label="Button container">
           <button width="auto" height="auto"
             class="min-h-[50px] flex-col items-center justify-center text-[14px] md:text-base lg:text-xl font-semibold leading-snug text-gray-900 max-md:px-5 inline-flex max-w-full gap-2.5 overflow-hidden rounded-md bg-lime-500 transition-all px-12 py-2.5"
-            aria-label="Contact us button">Contactez-nous pour en savoir plus</button>
+            aria-label="Contact us button"><a href="/contact">
+              Contactez-nous pour en savoir plus  
+            </a></button>
+
         </div>
       </div>
     </div>
