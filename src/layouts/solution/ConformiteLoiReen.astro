@@ -1,0 +1,112 @@
+---
+import { Image } from "astro:assets";
+import imgimages_gii_clr_img_1_webp from "../../../public/images/gii_clr_img_1.webp";
+import imgimages_gii_clr_img_2_webp from "../../../public/images/gii_clr_img_2.webp";
+---
+
+<section class="main-component flex flex-col bg-slate-800" aria-labelledby="conformiteLoiReenTitle">
+  <div class="px-4 sm:px-6 lg:px-8 max-md:px-5 max-md:max-w-full pt-16" aria-label="Conformité Loi REEN header wrapper">
+    <div class="max-w-screen-2xl mx-auto">
+      <h4 width="auto" height="auto"
+        class="gap-2.5 self-stretch w-full text-[26px] lg:leading-[2.5rem] lg:text-4xl font-semibold text-white text-center">
+        Conformité Loi REEN
+      </h4>
+    </div>
+  </div>
+  <div class="flex flex-col justify-center py-10 mt-10 w-full font-semibold leading-none text-center max-md:max-w-full">
+    <div
+      class="flex flex-col justify-center py-4 w-full border-t border-b border-white px-4 sm:px-6 lg:px-8 max-md:px-5 max-md:max-w-full bg-slate-700 text-white">
+      <div class="w-full max-w-screen-2xl mx-auto">
+        <p width="auto" height="auto" class="w-full leading-snug">
+          La solution Green IT Impact vous permet d’être en conformité avec la
+          loi REEN, prolongement de la loi AGEC.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="px-12 lg:px-20 max-md:max-w-full" aria-label="Conformité Loi REEN body wrapper">
+    <div class="max-w-screen-2xl ">
+      <div class="flex flex-col items-center text-xl text-white gap-8">
+        <p width="auto" height="auto"
+          class="w-full mt-0 text-lg lg:text-xl leading-snug lg:leading-10 text-left lg:text-center">
+          La loi REEN (Réduction de l’empreinte environnementale du numérique)
+          s’adresse à tous les acteurs de la chaîne de valeur du numérique :
+        </p>
+        <div
+          class="flex flex-wrap gap-0 md:gap-6 justify-between md:justify-start items-start mt-10 font-semibold text-center text-lime-400 min-h-[340px]">
+          <div
+            class="flex flex-col items-center p-4 leading-snug rounded-2xl bg-slate-700 min-h-[295px] lg:min-h-[310px] w-[calc(50%_-_9px)] md:w-[302px]"
+            aria-labelledby="conformiteLoiReenProfessionalLabel">
+            <Image alt="Professionnels du secteur" src={imgimages_gii_clr_img_1_webp} width="400" height="300"
+              class="max-w-full aspect-square w-[200px] mx-auto" cssResizer="mx-auto" loading="lazy" />
+            <p width="auto" height="auto" class="mt-0">
+              Professionnels du secteur
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center p-4 leading-snug rounded-2xl bg-slate-700 min-h-[295px] lg:min-h-[310px] w-[calc(50%_-_9px)] md:w-[302px]"
+            aria-labelledby="conformiteLoiReenPublicLabel">
+            <Image alt="Acteurs publics et consommateurs" src={imgimages_gii_clr_img_2_webp} width="400" height="300"
+              class="max-w-full aspect-square w-[200px] mx-auto" cssResizer="mx-auto" loading="lazy" />
+            <p width="auto" height="auto" class="mt-0">
+              Acteurs publics et consommateurs
+            </p>
+          </div>
+        </div>
+      
+        <div class=" p-8 min-h-[300px] flex flex-col">
+          <p
+          class="mb-12">
+          Elle s’articule autour de 5 objectifs clés :
+        </p>
+          <!-- Top row of boxes -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+            <div class=" border border-white rounded-xl p-4 text-center flex items-center justify-center min-h-[131px]">
+              <p class="text-white text-sm">
+                La prise de conscience de l'impact environnemental du numérique.
+              </p>
+            </div>
+            
+            <div class=" border border-white rounded-xl p-4 text-center flex items-center justify-center min-h-[131px]">
+              <p class="text-white text-sm">
+                La réduction du renouvellement des appareils numériques.
+              </p>
+            </div>
+            
+            <div class=" border border-white rounded-xl p-4 text-center flex items-center justify-center min-h-[131px]">
+              <p class="text-white text-sm">
+                L'adoption d'usages numériques écoresponsables.
+              </p>
+            </div>
+            
+            <div class=" border border-white rounded-xl p-4 text-center flex items-center justify-center min-h-[131px]">
+              <p class="text-white text-sm">
+                La promotion des centres de données et des réseaux moins énergivores.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Bottom centered box -->
+          <div class="flex justify-center ">
+            <div class="border border-white rounded-xl p-4 text-center flex items-center justify-center min-h-[131px] lg:max-w-[356px] w-full">
+              <p class="text-white text-sm">
+                La promotion du déploiement d'une stratégie numérique responsable dans les territoires.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div width="auto" height="auto"
+          class="text-lg lg:text-xl mt-0 flex-1 shrink gap-2.5 self-stretch w-full text-center"
+          cssResizer="mt-[2.5rem]">
+          Notre équipe vous accompagne vers l’obtention du label officiel
+          Numérique Responsable.
+        </div>
+        <div class="text-center pb-16 max-md:mt-6 mt-8" aria-label="Button container">
+          <button width="auto" height="auto"
+            class="min-h-[50px] flex-col items-center justify-center text-[14px] md:text-base lg:text-xl font-semibold leading-snug text-gray-900 max-md:px-5 inline-flex max-w-full gap-2.5 overflow-hidden rounded-md bg-lime-500 transition-all px-12 py-2.5"
+            aria-label="Contact us button">Contactez-nous pour en savoir plus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
