@@ -33,7 +33,7 @@ import imgimages_menu_bar_webp from "../../public/images/menu-bar.webp";
             <a id="concept" href="/concept" class="concept hover:text-lime-400">Concept</a>
             <a id="solution"   href="/solution" class="hover:text-lime-400">Solution</a>
             <a id="responsable" href="/responsable" class="hover:text-lime-400">Numérique Responsable</a>
-            <a id="blog" href="/comming-soon" class="hover:text-lime-400">Blog</a>
+            <a id="blog" href="/blog" class="hover:text-lime-400">Blog</a>
             <a id="/comming-soon" href="/comming-soon" class="uppercase hover:text-lime-400"
               >MADE BY GREENWEB</a
             >
@@ -97,7 +97,8 @@ import imgimages_menu_bar_webp from "../../public/images/menu-bar.webp";
             >Numérique Responsable</a
           >
           <a
-            href="/comming-soon"
+             id="blog mobile"
+            href="/blog"
             class="w-full text-center py-3 rounded-lg hover:bg-lime-500 hover:text-slate-900 transition"
             >Blog</a
           >
@@ -123,7 +124,8 @@ const currentPath = window.location.pathname;
 
 navLinks.forEach((link) => {
     const linkId = link.getAttribute("id");
-    if (linkId && `/${linkId}` === currentPath || `/${linkId}`.includes(currentPath)) { 
+    console.log(`/${linkId}`,currentPath)
+    if (linkId && `/${linkId}` === currentPath || (`/${linkId}`.includes(currentPath) && currentPath !='/' )) { 
       link.classList.add("text-lime-400");
     } else {
       link.classList.remove("text-lime-400");
