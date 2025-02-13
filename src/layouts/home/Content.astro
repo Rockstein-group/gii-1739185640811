@@ -1,30 +1,22 @@
 ---
-import { Image } from "astro:assets";
-import imgimages_gii_strategy_1_webp from "../../../public/images/gii_strategy_1.webp";
-import imgimages_gii_strategy_2_webp from "../../../public/images/gii_strategy_2.webp";
-import imgimages_gii_strategy_3_webp from "../../../public/images/gii_strategy_3.webp";
-import imgimages_gii_quote_icon_webp from "../../../public/images/gii_quote_icon.webp";
-import gii_choose_1 from "../../../public/images/gii_choose_1.webp";
-import gii_choose_2 from "../../../public/images/gii_choose_2.webp";
-import gii_choose_3 from "../../../public/images/gii_choose_3.webp";
-
-
-import imgimages_gii_testimonial_avatar_webp from "../../../public/images/gii_testimonial_avatar.webp";
-import WhyChooseUs from "./WhyChooseUs.astro";
 import StrategySection from "./StrategySection.astro";
 import StatsSection from "./StatsSection.astro";
 import KeyPerformance from "./KeyPerformance.astro";
 import Testimonials from "./Testimonials.astro";
 import Testimonials1 from "./Testimonials1.astro";
+import WhyChooseUs from "./WhyChooseUs.astro";
 ---
 
 <section class="main-component bg-[#243544]" aria-labelledby="main component">
-   <section class="px-12 lg:px-20 max-md:max-w-full flex w-full flex-col justify-center max-w-screen-2xl mx-auto">
+   <section class="px-4 lg:px-20 max-md:max-w-full flex w-full flex-col justify-center max-w-screen-2xl mx-auto gap-10">
     <WhyChooseUs/>
     <StrategySection/>
     <KeyPerformance/>
    </section>
+   <section class="flex flex-col gap-10">
     <StatsSection/>
     <Testimonials1/>
   <Testimonials/>
+   </section>
+    
 </section>
