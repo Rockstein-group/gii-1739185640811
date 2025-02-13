@@ -1,0 +1,30 @@
+---
+import Seo from "../components/Seo.astro";
+import "../styles/global.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../layouts/home/Hero.astro";
+import Content from "../layouts/home/Content.astro";
+import CommingSoon from "./comming-soon.astro";
+---
+
+<html lang="en">
+  <head>
+    <Seo
+      seo={{
+        title: "Accueil - Green It Impact",
+        description: "Agissez pour un numérique plus éthique et durable. Découvrez Green IT Impact, une méthode innovante pour réduire l'empreinte environnementale de votre IT",
+        keywords: "",
+        canonical: "https://gii-1739185640811.ecobuilder.io/",
+        image: "https://gii-1739185640811.ecobuilder.io/images/gii_logo_seo.webp",
+        type: "website",
+        themeColor: "#ffffff",
+      }}
+    />
+    <meta charset="utf-8" />
+   
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Accueil - Green It Impact</title>
+  </head>
+   <CommingSoon/>
+</html>
