@@ -124,8 +124,7 @@ const currentPath = window.location.pathname;
 
 navLinks.forEach((link) => {
     const linkId = link.getAttribute("id");
-    console.log(`/${linkId}`,currentPath)
-    if (linkId && `/${linkId}` === currentPath || (`/${linkId}`.includes(currentPath) && currentPath !='/' )) { 
+    if (linkId && (`/${linkId}`.includes(currentPath) && currentPath !='/' )) { 
       link.classList.add("text-lime-400");
     } else {
       link.classList.remove("text-lime-400");
