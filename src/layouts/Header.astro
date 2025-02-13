@@ -123,8 +123,8 @@ import imgimages_menu_bar_webp from "../../public/images/menu-bar.webp";
 const currentPath = window.location.pathname;
 
 navLinks.forEach((link) => {
-    const linkId = link.getAttribute("id");
-    if (linkId && (`/${linkId}`.includes(currentPath) && currentPath !='/' )) { 
+    const href = link.getAttribute("href");
+    if (href && href.includes(currentPath.replace(/^\/+|\/+$/g, '')) ) {
       link.classList.add("text-lime-400");
     } else {
       link.classList.remove("text-lime-400");
