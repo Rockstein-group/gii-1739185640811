@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
 import gii_step_5_pic from "../../../public/images/gii_step_5_pic.webp";
-import imgimages_gii_solution_img_5_4_webp from "../../../public/images/gii_solution_img_5_4.webp";
-import imgimages_gii_solution_img_5_1_webp from "../../../public/images/gii_solution_img_5_1.webp";
+import imgimages_gii_solution_img_5_4_svg from "../../../public/images/gii_solution_img_5_4.svg";
+import imgimages_gii_solution_img_5_1_svg from "../../../public/images/gii_solution_img_5_1.svg";
 
-import imgimages_gii_solution_img_5_2_webp from "../../../public/images/gii_solution_img_5_2.webp";
-import imgimages_gii_solution_img_5_3_webp from "../../../public/images/gii_solution_img_5_3.webp";
+import gii_solution_img_5_2_svg from "../../../public/images/gii_solution_img_5_2.svg";
+import gii_solution_img_5_3_svg from "../../../public/images/gii_solution_img_5_3.svg";
 ---
 
-<section class="flex flex-col items-center">
+<section class="flex flex-col items-center gap-10">
   <section class="flex flex-col md:flex-row items-end w-full text-white">
     <div class="md:w-1/2 flex gap-16 pl-12 lg:pl-20 pr-10">
       <h2 class="text-7xl font-[400] flex items-start font-poppins lg:mt-2">
@@ -31,45 +31,45 @@ import imgimages_gii_solution_img_5_3_webp from "../../../public/images/gii_solu
     </div>
   
     <div class="md:w-1/2 w-full flex justify-end mt-8 md:mt-0">
-      <Image alt="Image illustrating the evaluation of your footprint" src={gii_step_5_pic} width="619" height="300"
-        class="self-stretch my-auto lg:w-[619px] flex" loading="lazy"
+      <Image alt="Image illustrating the evaluation of your footprint" src={gii_step_5_pic} width="619" height="498"
+        class="self-stretch my-auto w-auto lg:h-[498px] flex" loading="lazy"
         aria-label="Image related to evaluating your footprint" />
     </div>
   
   </section>
-  <div class="px-12 lg:px-20 flex flex-wrap justify-center gap-6 mt-10" aria-label="Step Five Features Container">
+  <div class="px-4 lg:px-20 flex flex-wrap justify-center gap-6 mt-10 lg:flex-row md:flex-row flex-col w-full" aria-label="Step Five Features Container">
   
     <!-- Feature Block -->
-    <div class="flex-1 max-h-[310px] w-[302px] flex flex-col items-center px-6 pt-6 pb-8 rounded-2xl bg-slate-700">
-      <Image alt="Feature image for Éthique" src={imgimages_gii_solution_img_5_1_webp} width="100" height="100"
-        class="w-20 h-20 object-contain mb-4" loading="lazy" />
+    <div class="lg:flex-1 max-h-[310px] w-full lg:w-[302px] flex flex-col items-center p-4 rounded-2xl bg-[#283E52]">
+      <Image alt="Feature image for Éthique" src={imgimages_gii_solution_img_5_1_svg} width="100" height="100"
+        class="w-[200px] h-[200px] object-contain mb-4" loading="lazy" />
       <p class="text-xl font-semibold text-center text-lime-400 leading-tight">
         Éthique
       </p>
     </div>
   
     <!-- Feature Block -->
-    <div class="flex-1 max-h-[310px] w-[302px] flex flex-col items-center px-6 pt-6 pb-8 rounded-2xl bg-slate-700">
-      <Image alt="Feature image for Équitable" src={imgimages_gii_solution_img_5_2_webp} width="100" height="100"
-        class="w-20 h-20 object-contain mb-4" loading="lazy" />
+    <div class="lg:flex-1 max-h-[310px] w-full lg:w-[302px] flex flex-col items-center p-4 rounded-2xl bg-[#283E52]">
+      <Image alt="Feature image for Équitable" src={gii_solution_img_5_2_svg} width="100" height="100"
+        class="w-[200px] h-[200px] object-contain mb-4" loading="lazy" />
       <p class="text-xl font-semibold text-center text-lime-400 leading-tight">
         Équitable
       </p>
     </div>
   
     <!-- Feature Block -->
-    <div class="flex-1 max-h-[310px] w-[302px] flex flex-col items-center px-6 pt-6 pb-8 rounded-2xl bg-slate-700">
-      <Image alt="Feature image for Écologique" src={imgimages_gii_solution_img_5_3_webp} width="100" height="100"
-        class="w-20 h-20 object-contain mb-4" loading="lazy" />
+    <div class="lg:flex-1 max-h-[310px] w-full lg:w-[302px] flex flex-col items-center p-4 rounded-2xl bg-[#283E52]">
+      <Image alt="Feature image for Écologique" src={gii_solution_img_5_3_svg} width="100" height="100"
+        class="w-[200px] h-[200px] object-contain mb-4" loading="lazy" />
       <p class="text-xl font-semibold text-center text-lime-400 leading-tight">
         Écologique
       </p>
     </div>
   
     <!-- Feature Block (Adjusted for Long Text) -->
-    <div class="flex-1 max-h-[310px] w-[302px] flex flex-col items-center px-6 pt-6 pb-8 rounded-2xl bg-slate-700">
-      <Image alt="Feature image for Porteuse de valeurs responsables" src={imgimages_gii_solution_img_5_4_webp} width="100" height="100"
-        class="w-20 h-20 object-contain mb-4" loading="lazy" />
+    <div class="lg:flex-1 max-h-[310px] w-full lg:w-[302px] flex flex-col items-center p-4 rounded-2xl bg-[#283E52]">
+      <Image alt="Feature image for Porteuse de valeurs responsables" src={imgimages_gii_solution_img_5_4_svg} width="100" height="100"
+        class="w-[200px] h-[200px] object-contain mb-4" loading="lazy" />
       <p class="text-xl font-semibold text-center text-lime-400 leading-tight">
         Porteuse de <br /> valeurs responsables
       </p>
