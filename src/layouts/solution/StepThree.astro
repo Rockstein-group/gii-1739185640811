@@ -2,6 +2,7 @@
 ---
 import { Image } from "astro:assets";
 import gii_step_3_pic from "../../../public/images/gii_step_3_pic.webp";
+import gii_step_3_pic_large from "../../../public/images/gii_step_3_pic_large.webp";
 ---
 
 
@@ -26,10 +27,21 @@ import gii_step_3_pic from "../../../public/images/gii_step_3_pic.webp";
   
   </div>
 
-  <div class="md:w-1/2 w-full flex justify-end mt-8 md:mt-0">
+  <div class="2xl:hidden md:w-1/2 w-full flex justify-end mt-8 md:mt-0">
     <Image
     alt="Image illustrating the evaluation of your footprint"
     src={gii_step_3_pic}
+    width="619"
+    height="300"
+    class="self-stretch my-auto lg:w-[619px] flex"
+    loading="lazy"
+    aria-label="Image related to evaluating your footprint"
+  />
+  </div>
+  <div class="2xl:flex hidden md:w-1/2 w-full justify-end mt-8 md:mt-0">
+    <Image
+    alt="Image illustrating the evaluation of your footprint"
+    src={gii_step_3_pic_large}
     width="619"
     height="300"
     class="self-stretch my-auto lg:w-[619px] flex"

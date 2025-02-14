@@ -2,13 +2,14 @@
 ---
 import { Image } from "astro:assets";
 import gii_evaluate_dashboard from "../../../public/images/gii_evaluate_dashboard.webp";
+import gii_evaluate_dashboard_large from "../../../public/images/gii_evaluate_dashboard_large.webp";
 ---
 
 
 
-<section class="flex flex-col md:flex-row items-center w-full  text-white">
+<section class="flex flex-col md:flex-row items-center w-full  text-white 2xl:container 2xl:mx-auto">
   {/* Left Side - Text Content */}
-  <div class="md:w-1/2 pl-12 lg:pl-20 pr-10  flex gap-8">
+  <div class="md:w-1/2 2xl:pl-0 pl-12 lg:pl-20 pr-10  flex gap-8">
     <h2 class="text-7xl font-[400] flex items-start font-poppins lg:mt-2">
     1.
     </h2>
@@ -29,10 +30,22 @@ import gii_evaluate_dashboard from "../../../public/images/gii_evaluate_dashboar
   
   </div>
 
-  <div class="md:w-1/2 w-full flex justify-end mt-8 md:mt-0">
+  <div class="md:w-1/2 w-full flex justify-end mt-8 md:mt-0 2xl:hidden">
     <Image
     alt="Image illustrating the evaluation of your footprint"
     src={gii_evaluate_dashboard}
+    width="705"
+    height="300"
+    class="self-stretch my-auto lg:w-[705px] flex lg:block"
+    loading="lazy"
+    aria-label="Image related to evaluating your footprint"
+  />
+  </div>
+
+  <div class="hidden 2xl:flex md:w-1/2 w-full justify-end mt-8 md:mt-0">
+    <Image
+    alt="Image illustrating the evaluation of your footprint"
+    src={gii_evaluate_dashboard_large}
     width="705"
     height="300"
     class="self-stretch my-auto lg:w-[705px] flex lg:block"

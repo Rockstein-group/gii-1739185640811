@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import gii_step_5_pic from "../../../public/images/gii_step_5_pic.webp";
+import gii_step_5_pic_large from "../../../public/images/gii_step_5_pic_large.webp";
 import imgimages_gii_solution_img_5_4_svg from "../../../public/images/gii_solution_img_5_4.svg";
 import imgimages_gii_solution_img_5_1_svg from "../../../public/images/gii_solution_img_5_1.svg";
 
@@ -10,7 +11,7 @@ import gii_solution_img_5_3_svg from "../../../public/images/gii_solution_img_5_
 
 <section class="flex flex-col items-center gap-10">
   <section class="flex flex-col md:flex-row items-end w-full text-white">
-    <div class="md:w-1/2 flex gap-16 pl-12 lg:pl-20 pr-10">
+    <div class="md:w-1/2 flex gap-16 2xl:pl-0 pl-12 lg:pl-20 pr-10">
       <h2 class="text-7xl font-[400] flex items-start font-poppins lg:mt-2">
         5.
       </h2>
@@ -30,20 +31,26 @@ import gii_solution_img_5_3_svg from "../../../public/images/gii_solution_img_5_
       </div>
     </div>
   
-    <div class="md:w-1/2 w-full flex justify-end mt-8 md:mt-0">
+    <div class="2xl:hidden md:w-1/2 w-full flex justify-end mt-8 md:mt-0">
       <Image alt="Image illustrating the evaluation of your footprint" src={gii_step_5_pic} width="619" height="498"
         class="self-stretch my-auto w-auto lg:h-[498px] flex" loading="lazy"
         aria-label="Image related to evaluating your footprint" />
     </div>
-  
+     
+    <div class="2xl:flex hidden md:w-1/2 w-full justify-end mt-8 md:mt-0">
+      <Image alt="Image illustrating the evaluation of your footprint" src={gii_step_5_pic_large} width="619" height="498"
+        class="self-stretch my-auto w-auto lg:h-[498px] flex" loading="lazy"
+        aria-label="Image related to evaluating your footprint" />
+    </div>
+    
   </section>
-  <div class="px-4 lg:px-20 flex flex-wrap justify-center gap-6 mt-10 lg:flex-row md:flex-row flex-col w-full" aria-label="Step Five Features Container">
+  <div class="px-4 lg:px-0 flex flex-wrap justify-center gap-6 mt-10 lg:flex-row md:flex-row flex-col w-full" aria-label="Step Five Features Container">
   
     <!-- Feature Block -->
     <div class="lg:flex-1 max-h-[310px] w-full lg:w-[302px] flex flex-col items-center p-4 rounded-2xl bg-[#283E52]">
       <Image alt="Feature image for Éthique" src={imgimages_gii_solution_img_5_1_svg} width="100" height="100"
         class="w-[200px] h-[200px] object-contain mb-4" loading="lazy" />
-      <p class="test l font-semibold text-center text-lime-400 leading-tight">
+      <p class="test container l font-semibold text-center text-lime-400 leading-tight">
         Éthique
       </p>
     </div>
@@ -52,7 +59,7 @@ import gii_solution_img_5_3_svg from "../../../public/images/gii_solution_img_5_
     <div class="lg:flex-1 max-h-[310px] w-full lg:w-[302px] flex flex-col items-center p-4 rounded-2xl bg-[#283E52]">
       <Image alt="Feature image for Équitable" src={gii_solution_img_5_2_svg} width="100" height="100"
         class="w-[200px] h-[200px] object-contain mb-4" loading="lazy" />
-      <p class="test l font-semibold text-center text-lime-400 leading-tight">
+      <p class="test container l font-semibold text-center text-lime-400 leading-tight">
         Équitable
       </p>
     </div>
@@ -61,7 +68,7 @@ import gii_solution_img_5_3_svg from "../../../public/images/gii_solution_img_5_
     <div class="lg:flex-1 max-h-[310px] w-full lg:w-[302px] flex flex-col items-center p-4 rounded-2xl bg-[#283E52]">
       <Image alt="Feature image for Écologique" src={gii_solution_img_5_3_svg} width="100" height="100"
         class="w-[200px] h-[200px] object-contain mb-4" loading="lazy" />
-      <p class="test l font-semibold text-center text-lime-400 leading-tight">
+      <p class="test container l font-semibold text-center text-lime-400 leading-tight">
         Écologique
       </p>
     </div>
@@ -70,7 +77,7 @@ import gii_solution_img_5_3_svg from "../../../public/images/gii_solution_img_5_
     <div class="lg:flex-1 max-h-[310px] w-full lg:w-[302px] flex flex-col items-center p-4 rounded-2xl bg-[#283E52]">
       <Image alt="Feature image for Porteuse de valeurs responsables" src={imgimages_gii_solution_img_5_4_svg} width="100" height="100"
         class="w-[200px] h-[200px] object-contain mb-4" loading="lazy" />
-      <p class="test l font-semibold text-center text-lime-400 leading-tight">
+      <p class="test container l font-semibold text-center text-lime-400 leading-tight">
         Porteuse de <br /> valeurs responsables
       </p>
     </div>
